@@ -14,8 +14,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.2-preview.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Middleware\" />
-  </ItemGroup>
+ <ItemGroup>
+  <Folder Include="Middleware\" />
+  <Compile Remove="ProductsCatalogue.Tests\**" />
+  <Content Remove="ProductsCatalogue.Tests\**" />
+  <EmbeddedResource Remove="ProductsCatalogue.Tests\**" />
+  <None Remove="ProductsCatalogue.Tests\**" />
+</ItemGroup>
 
 </Project>
